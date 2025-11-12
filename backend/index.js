@@ -7,7 +7,7 @@ const { initializeDatabase } = require("./config/db.connect");
 const { Student } = require("./model/student.model");
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://rx3-reduxtoolkit-assignment-frontend.onrender.com",
     credentials: true,
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: ["Content-Type", "Authorization"]
