@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchStudents = createAsyncThunk("/student/all", async () => {
-    const response = await fetch("http://localhost:3000/students", {
+    const response = await fetch("https://rx3-reduxtoolkit-assignment-backend.onrender.com/students", {
         method: "GET"
     });
     const result = await response.json();
@@ -9,7 +9,7 @@ export const fetchStudents = createAsyncThunk("/student/all", async () => {
 });
 
 export const addStudentAsync = createAsyncThunk("/students/add", async (data) => {
-    const response = await fetch("http://localhost:3000/students", {
+    const response = await fetch("https://rx3-reduxtoolkit-assignment-backend.onrender.com/students", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ export const addStudentAsync = createAsyncThunk("/students/add", async (data) =>
 });
 
 export const updateStudentAsync = createAsyncThunk("/students/update", async ({ id, formData }) => {
-    const response = await fetch(`http://localhost:3000/students/${id}`, {
+    const response = await fetch(`https://rx3-reduxtoolkit-assignment-backend.onrender.com/students/${id}`, {
         method: "PUT",
         headers: {
             'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ export const updateStudentAsync = createAsyncThunk("/students/update", async ({ 
 });
 
 export const deleteStudentAsync = createAsyncThunk("/students/delete", async (id) => {
-    const response = await fetch(`http://localhost:3000/students/${id}`, {
+    const response = await fetch(`https://rx3-reduxtoolkit-assignment-backend.onrender.com/students/${id}`, {
         method: "DELETE"
     });
     const result = await response.json();
