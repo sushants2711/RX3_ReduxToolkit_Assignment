@@ -5,7 +5,7 @@ Welcome to the **Student Management System practice project**. This repo demonst
 ---
 
 🔗 **Live Demo:**
-[Student Management System]()
+[Student Management System](https://rx3-reduxtoolkit-assignment-frontend.onrender.com)
 
 🔗 **Demo Video:**
 [Student Management System](https://drive.google.com/file/d/1RRRIljZRlAjP9J3yFg01eUJ-3aYrOJUI/view?usp=sharing)
